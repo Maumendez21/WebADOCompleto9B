@@ -200,5 +200,24 @@ namespace WebPruebaAccesoSQL
                 Page.ClientScript.RegisterStartupScript(this.GetType(), "errorButton5", "msgbox(`Error`, `" + mensaje + "`, `error`)", true);
             }
         }
+
+        protected void Button8_Click(object sender, EventArgs e)
+        {
+            string query = "select * from PRODUCTOS";
+            DataSet caja = null;
+            string h = "";
+
+
+            caja = db.ConsultaDS(query, db.AbrirConexion(ref h), ref h);
+            if (caja!=null)
+            {
+                Page.ClientScript.RegisterStartupScript(this.GetType(), "getProduct", "msgbox(`Correcto`, `" + h + "`, `success`)", true);
+                GridView2.DataSource = caja.Tables[0];
+                GridView2.DataBind();
+            }else
+            {
+                Page.ClientScript.RegisterStartupScript(this.GetType(), "errorGetProducto", "msgbox(`Incorrecto`, `" + h + "`, `error`)", true);
+            }
+        }
     }
 }

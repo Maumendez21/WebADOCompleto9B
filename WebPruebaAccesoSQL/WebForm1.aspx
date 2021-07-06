@@ -41,7 +41,7 @@
             <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
             <br />
             <br />
-            <asp:Button ID="Button5" runat="server" OnClick="Button5_Click" Text="Button" />
+            <asp:Button ID="Button5" runat="server" OnClick="Button5_Click" Text="Add Empleado" />
             <br />
             <br />
             idProd:
@@ -54,7 +54,28 @@
             <asp:TextBox ID="txtPrecio" runat="server"></asp:TextBox>
             <br />
             <br />
-            <asp:Button ID="Button6" runat="server" OnClick="Button6_Click" Text="Button" />
+            <asp:Button ID="Button6" runat="server" OnClick="Button6_Click" Text="Agregar Producto" />
+            <br />
+            <br />
+            <asp:Button ID="Button8" runat="server" OnClick="Button8_Click" Text="Consulta productos" />
+            <br />
+            <br />
+            <asp:GridView ID="GridView2" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Height="167px" Width="511px">
+                <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
+                <EditRowStyle BackColor="#999999" />
+                <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
+                <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
+                <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
+                <SortedAscendingCellStyle BackColor="#E9E7E2" />
+                <SortedAscendingHeaderStyle BackColor="#506C8C" />
+                <SortedDescendingCellStyle BackColor="#FFFDF8" />
+                <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
+            </asp:GridView>
+            <br />
+            <br />
+            <br />
             <br />
             <br />
             <br />
