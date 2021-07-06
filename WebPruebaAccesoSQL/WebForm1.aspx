@@ -28,6 +28,19 @@
             <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="ConsultaDataSet" />
 &nbsp;
             <asp:Button ID="Button4" runat="server" OnClick="Button4_Click" Text="ObtenDataSet" />
+            &nbsp;
+            <br />
+            <br />
+            <br />
+            idNombre:
+            <asp:TextBox ID="txtIDSearch" runat="server"></asp:TextBox>
+&nbsp;Nombre a modificar:
+            <asp:TextBox ID="txtModificarName" runat="server"></asp:TextBox>
+            <br />
+            <br />
+            <asp:Button ID="Button9" runat="server" OnClick="Button9_Click" Text="Modificar datos del DATASET" />
+            <br />
+            <br />
             <br />
             <asp:GridView ID="GridView1" runat="server" Height="159px" Width="499px">
             </asp:GridView>
@@ -74,6 +87,7 @@
                 <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
             </asp:GridView>
             <br />
+            <asp:Button ID="Button10" runat="server" OnClick="Button10_Click" Text="Compra" />
             <br />
             <br />
             <br />

@@ -219,5 +219,27 @@ namespace WebPruebaAccesoSQL
                 Page.ClientScript.RegisterStartupScript(this.GetType(), "errorGetProducto", "msgbox(`Incorrecto`, `" + h + "`, `error`)", true);
             }
         }
+
+        protected void Button9_Click(object sender, EventArgs e)
+        {
+            DataSet t = Session["Tabla1"] as DataSet;
+            DataTable tabla = t.Tables[0];
+            DataRow ractual = null;
+
+            for (int r = 0; r <= tabla.Rows.Count  - 1; r++)
+            {
+                ractual = tabla.Rows[r];
+                if (ractual["ID_EMPLEADO"].ToString() == txtIDSearch.Text)
+                {
+                    ractual["NOMBRE"] = txtModificarName.Text;
+                }
+            }
+
+        }
+
+        protected void Button10_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("WebForm2.aspx");
+        }
     }
 }
