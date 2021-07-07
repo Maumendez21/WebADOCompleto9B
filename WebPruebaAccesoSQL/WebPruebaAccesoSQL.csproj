@@ -43,7 +43,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ClassSQL">
+    <Reference Include="ClassSQL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\ClassSQL\ClassSQL\bin\Debug\ClassSQL.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
